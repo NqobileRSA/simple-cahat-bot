@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chat-container {
+  width: 90%;
+  max-width: 800px;
+  height: 90vh;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+header {
+  background-color: #009688;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 24px;
+}
+
+.chat-box {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.message {
+  padding: 10px 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  max-width: 80%;
+}
+
+.user-message {
+  background-color: #e0f7fa;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.bot-message {
+  background-color: #f0f0f0;
+  margin-right: auto;
+  margin-left: 0;
+}
+
+.input-area {
+  padding: 15px;
+  border-top: 1px solid #e0e0e0;
+}
+
+form {
+  display: flex;
+  gap: 10px;
+}
+
+input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+}
+
+button {
+  padding: 12px 20px;
+  background-color: #009688;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #00796b;
+}
+
+button:disabled {
+  background-color: #b2dfdb;
+  cursor: not-allowed;
+}
+
+.options-list {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.options-list li {
+  padding: 8px 12px;
+  margin-bottom: 8px;
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.options-list li:hover {
+  background-color: #e0f2f1;
+}
+
+.options-list li span.option-number {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-color: #009688;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 24px;
+  margin-right: 10px;
+}
+
+.pre-wrap {
+  white-space: pre-wrap;
+}
